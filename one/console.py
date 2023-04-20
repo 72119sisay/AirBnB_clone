@@ -70,8 +70,8 @@ class HBNBCommand(cmd.Cmd):
                 for attribute, value in d.items():
                     if attribute in attributes:
                         value = attributes[attribute](value)
-                        setattr(storage.all()[key], attribute, value)
-                        storage.all()[key].save()
+                    setattr(storage.all()[key], attribute, value)
+                storage.all()[key].save()
 
     def do_EOF(self, line):
         """Handles End Of File character.
@@ -211,8 +211,8 @@ class HBNBCommand(cmd.Cmd):
                         value = cast(value)
                     except ValueError:
                         pass  # fine, stay a string then
-                    setattr(storage.all()[key], attribute, value)
-                    storage.all()[key].save()
+                setattr(storage.all()[key], attribute, value)
+                storage.all()[key].save()
 
 
 if __name__ == '__main__':
