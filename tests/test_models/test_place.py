@@ -232,7 +232,7 @@ class TestPlace_to_dict(unittest.TestCase):
             '__class__': 'Place',
             'created_at': dt.isoformat(),
             'updated_at': dt.isoformat(),
-            }
+        }
         self.assertDictEqual(pl.to_dict(), tdict)
 
     def test_contrast_to_dict_dunder_dict(self):

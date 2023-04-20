@@ -173,7 +173,7 @@ class TestAmenity_to_dict(unittest.TestCase):
             '__class__': 'Amenity',
             'created_at': dt.isoformat(),
             'updated_at': dt.isoformat(),
-            }
+        }
         self.assertDictEqual(am.to_dict(), tdict)
 
     def test_contrast_to_dict_dunder_dict(self):
@@ -187,4 +187,3 @@ class TestAmenity_to_dict(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    unittest.main()

@@ -184,7 +184,7 @@ class TestReview_to_dict(unittest.TestCase):
             '__class__': 'Review',
             'created_at': dt.isoformat(),
             'updated_at': dt.isoformat(),
-            }
+        }
         self.assertDictEqual(rv.to_dict(), tdict)
 
     def test_contrast_to_dict_dunder_dict(self):
